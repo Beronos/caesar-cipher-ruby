@@ -1,4 +1,5 @@
 def caesar_cipher(text, shift)
+    shift = 26 + shift unless shift > 0
     for i in 0...text.length do
         ascii = text[i].ord
         shifted_ascii = ascii + shift
